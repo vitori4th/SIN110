@@ -89,7 +89,7 @@ def insereAresta(listaAdj, vi, vj):
 def insereVertice(listaAdj, vi):
     listaAdj[vi] = [] #cria uma chave com uma lista vazia
    
-    return print(listaAdj)
+    return listaAdj
 
 def removeVertice(listaAdj, vi):
     del listaAdj[vi] #deleta vértice da lista de adjacencia
@@ -99,7 +99,7 @@ def removeVertice(listaAdj, vi):
             if vi in listaAdj[v]:
                 listaAdj[v].remove(vi) #remove cada aresta que contenha o vértice excluído 
 
-    return print(listaAdj)
+    return listaAdj
 
 def removeAresta(listaAdj, vi, vj):
     x = tipoGrafo(listaAdj) #verifica tipo de grafo
